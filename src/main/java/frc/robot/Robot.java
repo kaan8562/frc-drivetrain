@@ -29,9 +29,10 @@ public class Robot extends TimedRobot {
 
   @Override
   public void teleopPeriodic() {
-    double speed = controller.getLeftY();
+    double speed = controller.getRightY();
     double rotation = controller.getRightX();
 
+    
     drive.arcadeDrive(speed, rotation);
   }
 }
